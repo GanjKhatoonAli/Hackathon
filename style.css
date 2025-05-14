@@ -70,7 +70,9 @@ body {
   #menu-toggle:checked + .menu-icon + .navlinks {
     display: flex;
   }
-
+.navbar img{
+  display: block;
+  margin: 0 auto;}
   .navlinks li {
     margin: 0;
     padding: 0;
