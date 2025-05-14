@@ -12,6 +12,7 @@ body {
 
 .navbar {
   display: flex;
+  position: sticky !important;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
@@ -208,9 +209,9 @@ body {
 
 .round {
   background-image: url(./Assets/Rectangle\ 164.png);
-  background-size: cover;
   background-position: center;
-  padding: 80px 40px;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -262,12 +263,13 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 2px;
-    margin: auto;
+    margin-left: auto;
   }
 
   .subscribe-form {
     flex-direction: column;
     align-items: center;
+   
   }
 
   .subscribe-form input,
@@ -282,10 +284,25 @@ body {
 
   .round h3 {
     font-size: 1.2rem;
-    padding: 0 10px;
+   
   }
 
   .bbok {
     width: 100%;
+  }
+}
+.card:hover{
+    background-color: #fcf2f2;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+  .Book {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .Book img {
+    max-width: 90%;
   }
 }
